@@ -49,7 +49,7 @@ void sighandler()
         fprintf(stderr, "unable to open file\n");
     }
 
-    //sigaction(SIGHUP, &existing_handler, NULL);
+    sigaction(SIGHUP, &existing_handler, NULL);
 }
 
 
